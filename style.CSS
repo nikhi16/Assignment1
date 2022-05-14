@@ -1,0 +1,101 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/bg1.jpg);
+    background-size: cover;
+    background-position:right;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-position: bottom;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+.logo{
+    max-height: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-ctn {
+  display: block;  
+margin-left: auto;  
+margin-right: auto;  
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
